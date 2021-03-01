@@ -14,7 +14,7 @@ const errorElement = document.getElementById('error')
 
 form.addEventListener('submit',(e) => {
     let messages =[]
-    if (mdp.matches(/[a-zA-Z0-9][a-zA-Z0-9]+/) && mdp.matches(/[~<>?]+/) && mdp.matches(/[!@$£%^&*()]+/) && mdp.length > 5){
+    if (mdp.match(/[a-zA-Z0-9][a-zA-Z0-9]+/) && mdp.match(/[~<>?]+/) && mdp.match(/[!@$£%^&*()]+/) && mdp.length > 5){
     }
     else {
         messages.push('Le mot de passe n\'est pas assez complexe')
