@@ -14,8 +14,10 @@ const errorElement = document.getElementById('error')
 
 form.addEventListener('submit',(e) => {
     let messages =[]
-    if (mdp.value.length <=6){
-        messages.push("Le mot de passe doit faire plus de 6 caractères")
+    if (mdp.matches(/[a-zA-Z0-9][a-zA-Z0-9]+/) && mdp.matches(/[~<>?]+/) && mdp.matches(/[!@$£%^&*()]+/) && mdp.length > 5){
+    }
+    else {
+        messages.push('Le mot de passe n\'est pas assez complexe')
     }
     if (messages.length > 0){
         e.preventDefault()
