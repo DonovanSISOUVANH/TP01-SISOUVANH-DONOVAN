@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<lang html>
 
     <head>
         <title>Formulaire de contact</title>
@@ -19,10 +19,10 @@
             <form id="form" class="form-container" method="post">
                   <div class="mb-3">
                     <input type="radio" id="civilite" name="genre" class="form-group">
-                    <label for="Monsier">Monsieur</label>
+                    <label for="Monsieur">Monsieur</label>
                   </div>
                   <div class="mb-3">
-                    <input type="radio" id="civilite" name="genre" class="form-group">
+                    <input type="radio" id="civilite2" name="genre" class="form-group">
                     <label for="Madame">Madame</label>
                   </div>
                 <div class="mb-3">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="cp" class="form-label">CP</label>
-                    <input type="number" id="cp" name="cp" class="form-group" required pattern = '[0-9]{5}' maxlength = '5'> 
+                    <input type="text" id="cp" name="cp" class="form-group" required pattern = '[0-9]{5}' maxlength = '5'> 
                 </div>
                 <div class="mb-3">
                     <label for="ville" class="form-label">Ville</label>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="tel" class="form-label">Téléphone</label>
-                    <input type="number" id="tel" name="tel" class="form-group" required pattern = '[0-9]{10}' maxlength = '10'>
+                    <input type="tel" id="tel" name="tel" class="form-group" required pattern = '[0-9]{10}' maxlength = '10'>
                 </div>
                 <div class="mb-3">
                     <label for="mail" class="form-label">Email</label>
