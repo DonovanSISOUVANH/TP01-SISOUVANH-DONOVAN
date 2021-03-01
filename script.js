@@ -11,10 +11,11 @@ const madame= document.getElementById('madame')
 const login =document.getElementById('login')
 const form =document.getElementById('form')
 const errorElement = document.getElementById('error')
+const lettreChiffre = /[a-zA-Z0-9][a-zA-Z0-9]/
 
 form.addEventListener('submit',(e) => {
     let messages =[]
-    if (mdp.match(/[a-zA-Z0-9][a-zA-Z0-9]+/) && mdp.match(/[~<>?]+/) && mdp.match(/[!@$£%^&*()]+/) && mdp.length > 5){
+    if (mdp.match(lettreChiffre)){
     }
     else {
         messages.push('Le mot de passe n\'est pas assez complexe')
