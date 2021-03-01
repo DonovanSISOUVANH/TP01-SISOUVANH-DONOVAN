@@ -15,7 +15,7 @@ const errorElement = document.getElementById('error')
 form.addEventListener('submit',(e) => {
     let messages =[]
     if (mdp.value.length <=6){
-        messages.push('Le mot de passe doit faire plus de 6 caractères')
+        messages.push("Le mot de passe doit faire plus de 6 caractères")
     }
     if (messages.length > 0){
         e.preventDefault()
