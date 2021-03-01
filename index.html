@@ -50,7 +50,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Mot de passe</label>
-                    <input type="password" id="mdp" name="mdp" class="form-group" required pattern="[0-9a-zA-Z-\.]{3,12}">
+                    <input type="password" id="mdp" name="mdp" class="form-group" required pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).* )">
                 </div>
                 <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
